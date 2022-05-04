@@ -1,3 +1,5 @@
-*.txt
+/.idea
+/.env
+/docker-compose.yml
 *.pyc
 *.p
