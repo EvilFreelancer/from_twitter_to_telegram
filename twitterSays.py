@@ -55,7 +55,7 @@ def send_message(msg):
            + tg_token \
            + '/sendMessage?chat_id=@' \
            + tg_channel_name \
-           + '&text="' \
+           + '\&text="' \
            + msg \
            + '"'
     os.system('curl ' + link)
