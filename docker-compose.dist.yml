@@ -5,6 +5,8 @@ services:
   twitter-says:
     build:
       context: .
+#    volumes:
+#      - .:/app
     environment:
       # Timeout in seconds between requests to API
       TS_TIMEOUT: 3600
