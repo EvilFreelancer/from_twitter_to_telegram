@@ -78,7 +78,7 @@ def main():
         for i in reversed(range(0, number_of_tweets)):
             if user_timeline[i]['text']:
                 print(user_timeline[i]['text'])
-                send_message(user_timeline[i]['text'])
+                send_message(user_timeline[i]['text'] + "\n\n#twitter")
                 time.sleep(4)
         latest_tweet_id = user_timeline[0]['id']
     file_pickle(latest_tweet_id)
